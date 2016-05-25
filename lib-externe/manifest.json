@@ -1,0 +1,29 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery.min.js", "content.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Powerful Extension To Extract E-Mail ID's Automatically From Web Pages",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwX4dcp13bv2a+SDXWlGQmN6vfSsiaD7PE2zqSAlbkyBuozZNT/zFMj/ETgnETa4AH6rxY42KKxNGVSRjfeFoQ8z47jH7CGV3GRm+o7nrUeKRShTUQtBl5N9Q+7oCk0p1L/Qe72MW61Zp8FDfGzY0TTTNoDqqOu/s68b9teH+PBcwFED9S2gKalpD0a1zSgDGbeEBtMXzBBFQIrurqdNEs7lIwWBbxk+I0dV95jIu01Q1AV7ZbP5CPM+Qu8d1iefMcG44k/LRfFEVfZnucVVc+5/6RTFlO5FhlROY7RW8blnScw1HIylkUUrCYmhZwWEsjztG0AC1gzHKQTnQ9sJrSQIDAQAB",
+   "manifest_version": 2,
+   "name": "Email Extractor",
+   "offline_enabled": true,
+   "permissions": [ "storage", "activeTab" ],
+   "short_name": "Email Extractor",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.4.2"
+}

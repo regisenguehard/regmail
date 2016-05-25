@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>emails</title>
+	<link rel="stylesheet" href="css/core.css" />
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Donne <span>Courriel&nbsp;</span></h1>
+		</header>
+
+		<article>
+			<div class="compteur">
+				<div id="showEmailCount">Nb d'e-mails dans la page : <span>0</span></div>
+				<div id="showEmailCountGlobal">Nb d'e-mails stocké : <span>0</span></div>
+			</div>
+
+			<div class="contenu">
+				<div id="showEmails"></div>
+				<div id="regmeail" class="reg"></div>
+			</div>
+		</article>
+
+		<footer>
+			<a href="#" id="exportBtn" download title="Exporte les emails de la page">Exporter</a>
+			-
+			<!-- <a id="listemail" title="Exporter la totalité des emails">Export complet</a> -->
+			<!-- <a href="dump.html" id="dump" title="Exporter la totalité des emails">Export complet</a> -->
+			<a href="#" id="dumpage" title="Exporter la totalité des emails">Export complet</a>
+			-
+			<a id="resetmail" title="Remets à 0 l'enregistrement des emails">Reset</a>
+		</footer>
+
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popup.js"></script>
+</body>
+</html>
